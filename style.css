@@ -21,6 +21,7 @@ button {
 
 button:hover {
   background-color: green;
+   transition:1s
 }
 .card {
   background-color: white;
@@ -29,4 +30,7 @@ button:hover {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 0 10px gray;
+}
+.card:hover{
+   transform:scale(2);
 }
