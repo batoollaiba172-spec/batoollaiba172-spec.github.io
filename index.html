@@ -1,83 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
   <title>Laiba Batool | Web Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <meta name="google-site-verification" content="dX0IcsGuDSeyLV0SVzx4Q46Ym2hQBPDf7RR1YXZLEAc" />
   <meta name="google-site-verification" content="...">
   <meta name="description" content="Laiba Batool portfolio website. Learning HTML, CSS, and web development.">
-  
-</head>
 
-<body>
-
-<h1>Laiba Batool</h1>
-
-  
-
-  <h2>About Me</h2>
-  <p>
-    I am learning web development and love building websites.
-    My goal is to become a professional developer.
-  </p>
-
-
-  <h2>Contact</h2>
-
-<p>Email: batoollaiba172@gmail.com</p>
-
-<a href="mailto:batoollaiba172@gmail.com">
-  <button>Contact Me</button>
-</a>
-  <h2>Skills</h2>
-  <ul style="list-style-position: inside;">
-    <li>coding</li>
-    <li>python</li>
-    <li>JS</li>
-  </ul>
-  <div class="card">
-  <h2>Project</h2>
-   <!DOCTYPE html>
-<html>
 <head>
-    <title>Laiba Batool | Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Laiba Batool</h1>
-        <p>Web Developer | HTML | CSS | JavaScript</p>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <h1>Laiba Batool</h1>
+    <p>Web Developer | HTML | CSS | JavaScript</p>
+  </header>
 
-    <!-- About Section -->
-    <section>
-        <h2>About Me</h2>
-        <p>I am learning web development and building projects using HTML, CSS, and JavaScript.</p>
-    </section>
+  <!-- ABOUT -->
+  <section class="about">
+    <img src="profile.jpg" alt="My Photo">
+    <p>
+      I am learning web development and building projects using HTML, CSS, and JavaScript.
+      My goal is to become a professional developer.
+    </p>
+  </section>
 
-    <!-- Game Section -->
-    <section class="game">
-        <h2>🎯 Guess the Number Game</h2>
-        <p>Guess a number between 1 and 10</p>
+  <!-- PROJECT -->
+  <section class="project">
+    <h2>🎮 Guess the Number Game</h2>
+    <p>Guess a number between 1 and 10</p>
 
-        <input type="number" id="guessInput" placeholder="Enter your guess">
-        <button onclick="checkGuess()">Guess</button>
+    <input type="number" id="guess" min="1" max="10">
+    <button onclick="checkGuess()">Guess</button>
 
-        <p id="message"></p>
-        <p id="tries"></p>
+    <p id="message"></p>
+    <p id="tries"></p>
+    <button onclick="restart()">Play Again</button>
+  </section>
 
-        <button onclick="resetGame()">🔄 Play Again</button>
-    </section>
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: batoollaiba172@gmail.com</p>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Laiba Batool</p>
-    </footer>
+  <footer>
+    <p>© 2026 Laiba Batool</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+                
 
 
   </body>
