@@ -1,8 +1,6 @@
-// Initialize the game
-let number = Math.floor(Math.random() * 10) + 1; // random number 1-10
-let tries = 0;
 
-// Function to check the user's guess
+let number = Math.floor(Math.random() * 10) + 1;
+let tries = 0;
 function checkGuess() {
     const guessInput = document.getElementById("guess");
     const message = document.getElementById("message");
@@ -10,7 +8,7 @@ function checkGuess() {
 
     const guess = Number(guessInput.value);
 
-    // Validate input
+    
     if (!guess || guess < 1 || guess > 10) {
         message.textContent = "Please enter a number between 1 and 10.";
         return;
@@ -28,8 +26,6 @@ function checkGuess() {
 
     triesText.textContent = "Tries: " + tries;
 }
-
-// Function to reset the game
 function resetGame() {
     number = Math.floor(Math.random() * 10) + 1;
     tries = 0;
@@ -37,9 +33,4 @@ function resetGame() {
     document.getElementById("guess").value = "";
     document.getElementById("message").textContent = "";
     document.getElementById("tries").textContent = "";
-}
-
-// Optional: connect HTML "Play Again" button
-function restart() {
-    resetGame();
 }
