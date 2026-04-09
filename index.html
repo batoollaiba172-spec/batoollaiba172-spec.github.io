@@ -34,18 +34,19 @@
     </p>
   </section>
 
-  <!-- PROJECT -->
   <section class="project">
-    <h2>🎮 Guess the Number Game</h2>
-    <p>Guess a number between 1 and 10</p>
+  <h2>🎮 Guess the Number Game</h2>
+  <p>Guess a number between 1 and 10</p>
 
-    <input type="number" id="guess" min="1" max="10">
-    <button onclick="checkGuess()">Guess</button>
+  <!-- Input and buttons -->
+  <input type="number" id="guess" min="1" max="10" placeholder="Enter your guess">
+  <button onclick="checkGuess()">Guess</button>
+  <button onclick="resetGame()">Play Again</button>
 
-    <p id="message"></p>
-    <p id="tries"></p>
-    <button onclick="restart()">Play Again</button>
-  </section>
+  <!-- Feedback -->
+  <p id="message"></p>
+  <p id="tries"></p>
+</section>
 
   <!-- CONTACT -->
   <section class="contact">
